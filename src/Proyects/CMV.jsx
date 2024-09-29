@@ -8,7 +8,7 @@ function CMV() {
     <div className="CMV-container">
       <h1>CMV Project</h1>
       <p>Este es el proyecto CMV.</p>
-      <a href="/" className="btn">Volver al Inicio</a> {/* Enlace opcional */}
+      <a href="/Portafolio-ThonyMarckDEV" className="btn">Volver al Inicio</a> {/* Enlace opcional */}
     </div>
   );
 }

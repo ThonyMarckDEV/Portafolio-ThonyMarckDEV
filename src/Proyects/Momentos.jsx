@@ -8,7 +8,7 @@ function Momentos() {
         <div className="Momentos-container">
           <h1>Momentos Project</h1>
           <p>Este es el proyecto Momentos.</p>
-          <a href="/" className="btn">Volver al Inicio</a> {/* Enlace opcional */}
+          <a href="/Portafolio-ThonyMarckDEV" className="btn">Volver al Inicio</a> {/* Enlace opcional */}
         </div>
       );
 }

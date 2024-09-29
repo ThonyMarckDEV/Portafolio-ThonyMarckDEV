@@ -5,17 +5,17 @@ import EcoRuta from './Proyects/EcoRuta'; // Importa el componente que vas a mos
 import Momentos from './Proyects/Momentos'; // Otro componente
 import CMV from './Proyects/CMV'; // Otro componente
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/EcoRuta" element={<EcoRuta />} /> {/* Define la ruta EcoRuta */}
-        <Route path="/momentos" element={<Momentos />} />
-        <Route path="/cmv" element={<CMV />} />
-      </Routes>
-    </Router>
-  );
-}
+  function App() {
+    return (
+      <Router basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/EcoRuta" element={<EcoRuta />} />
+          <Route path="/momentos" element={<Momentos />} />
+          <Route path="/cmv" element={<CMV />} />
+        </Routes>
+      </Router>
+    );
+  }
 
 export default App;
