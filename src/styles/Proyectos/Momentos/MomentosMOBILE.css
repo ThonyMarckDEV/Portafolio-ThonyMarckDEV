@@ -1,0 +1,48 @@
+/* pc.css */
+@media only screen and (max-width: 767px) {
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-y: hidden; /* Elimina el desplazamiento vertical */
+      height: 100%; /* Asegura que el contenido se ajuste a la pantalla */
+    }
+    
+    * {
+      box-sizing: border-box; /* Asegura que el padding y border no añadan más tamaño a los elementos */
+    }
+
+        /* EcoRutaPC.css */
+    .Momentos-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        position: relative;
+        background: linear-gradient(to bottom, transparent 60%, #007BFF 100%);
+    }
+    
+    .Momentos-container h1 {
+        color: #007BFF;
+    }
+    
+    .Momentos-container p {
+        font-size: 18px;
+        color: #ffffff;
+    }
+    
+    .Momentos-container .btn {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .Momentos-container .btn:hover {
+        background-color: #0056b3;
+    }
+  
+}
+
+    
