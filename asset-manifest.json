@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portafolio-ThonyMarckDEV/static/css/main.49e6f7a6.chunk.css",
+    "main.css": "/Portafolio-ThonyMarckDEV/static/css/main.305e3a0f.chunk.css",
     "main.js": "/Portafolio-ThonyMarckDEV/static/js/main.86abcaca.chunk.js",
     "main.js.map": "/Portafolio-ThonyMarckDEV/static/js/main.86abcaca.chunk.js.map",
     "runtime~main.js": "/Portafolio-ThonyMarckDEV/static/js/runtime~main.debaa713.js",
@@ -8,8 +8,8 @@
     "static/js/2.8851f76e.chunk.js": "/Portafolio-ThonyMarckDEV/static/js/2.8851f76e.chunk.js",
     "static/js/2.8851f76e.chunk.js.map": "/Portafolio-ThonyMarckDEV/static/js/2.8851f76e.chunk.js.map",
     "index.html": "/Portafolio-ThonyMarckDEV/index.html",
-    "precache-manifest.3c434f1425ea112f7ef50edb216e7427.js": "/Portafolio-ThonyMarckDEV/precache-manifest.3c434f1425ea112f7ef50edb216e7427.js",
+    "precache-manifest.d1077219aa951110748cf50e9f731bb7.js": "/Portafolio-ThonyMarckDEV/precache-manifest.d1077219aa951110748cf50e9f731bb7.js",
     "service-worker.js": "/Portafolio-ThonyMarckDEV/service-worker.js",
-    "static/css/main.49e6f7a6.chunk.css.map": "/Portafolio-ThonyMarckDEV/static/css/main.49e6f7a6.chunk.css.map"
+    "static/css/main.305e3a0f.chunk.css.map": "/Portafolio-ThonyMarckDEV/static/css/main.305e3a0f.chunk.css.map"
   }
 }
