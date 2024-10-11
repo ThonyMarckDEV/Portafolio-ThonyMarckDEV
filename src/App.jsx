@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import EcoRuta from './Proyects/EcoRuta'; // Importa el componente que vas a mostrar en esta ruta
 import Momentos from './Proyects/Momentos'; // Otro componente
-import CMV from './Proyects/CMV'; // Otro componente
+import CMV from './Proyects/NazarenoWEB'; // Otro componente
 
   function App() {
     return (
@@ -12,7 +12,7 @@ import CMV from './Proyects/CMV'; // Otro componente
           <Route path="/" element={<Home />} />
           <Route path="/EcoRuta" element={<EcoRuta />} />
           <Route path="/momentos" element={<Momentos />} />
-          <Route path="/cmv" element={<CMV />} />
+          <Route path="/NazarenoWEB" element={<CMV />} />
         </Routes>
       </Router>
     );

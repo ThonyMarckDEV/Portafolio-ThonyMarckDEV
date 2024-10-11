@@ -1,18 +1,15 @@
-/* pc.css */
 @media only screen and (max-width: 767px) {
     html, body {
-      margin: 0;
-      padding: 0;
-      overflow-y: hidden; /* Elimina el desplazamiento vertical */
-      height: 100%; /* Asegura que el contenido se ajuste a la pantalla */
-    }
-    
-    * {
-      box-sizing: border-box; /* Asegura que el padding y border no añadan más tamaño a los elementos */
+        margin: 0;
+        padding: 0;
+        height: 100%;
     }
 
-        /* EcoRutaPC.css */
-    .Momentos-container {
+    * {
+        box-sizing: border-box;
+    }
+
+    .momentos-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,29 +17,115 @@
         flex-direction: column;
         position: relative;
         background: linear-gradient(to bottom, transparent 60%, #007BFF 100%);
+        text-align: center;
+        padding: 20px;
     }
-    
-    .Momentos-container h1 {
+
+    .momentos-h1 {
+        font-size: 20px; /* Ajuste para pantallas móviles */
         color: #007BFF;
+        margin-bottom: 10px;
     }
-    
-    .Momentos-container p {
-        font-size: 18px;
+
+    .momentos-p {
+        font-size: 14px; /* Ajuste de texto para móviles */
         color: #ffffff;
+        line-height: 1.4;
+        max-width: 90%; /* Ajusta el ancho del texto en móviles */
+        margin-bottom: 15px;
     }
-    
-    .Momentos-container .btn {
+
+    .momentos-btn {
         background-color: #007BFF;
         color: white;
-        padding: 10px 20px;
+        padding: 8px 16px; /* Reduce el tamaño del botón */
         text-decoration: none;
         border-radius: 5px;
+        margin-top: 20px;
+        font-size: 14px;
     }
-    
-    .Momentos-container .btn:hover {
+
+    .momentos-btn:hover {
         background-color: #0056b3;
     }
-  
-}
 
-    
+    /* Contenedor de la laptop */
+    .momentos-laptop-frame {
+        position: relative;
+        width: 400px; /* Ajusta el tamaño de la laptop */
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Carrusel detrás de la pantalla de la laptop */
+    .momentos-carousel-container {
+        position: absolute;
+        width: 250px; /* Ajuste del tamaño del carrusel */
+        height: 140px;
+        top: 10%; /* Ajusta la posición vertical */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .momentos-carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    /* Imagen de la laptop, colocada por encima */
+    .momentos-laptop-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .momentos-carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 18px; /* Tamaño más pequeño en móviles */
+        cursor: pointer;
+        padding: 8px;
+        z-index: 100;
+        user-select: none;
+    }
+
+    .momentos-carousel-control-prev {
+        left: 5px;
+    }
+
+    .momentos-carousel-control-next {
+        right: 5px;
+    }
+
+    .momentos-carousel-control:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .momentos-github-icon {
+        width: 50px; /* Ajusta el tamaño del ícono de GitHub */
+        height: 50px;
+        border-radius: 5px;
+        margin-bottom: 10px; /* Reduce el margen inferior */
+    }
+
+    .momentos-github-icon:hover {
+        width: 60px; /* Efecto hover para el ícono en móviles */
+        height: 60px;
+    }
+
+    .momentos-btn{
+        display: none;
+    }
+}

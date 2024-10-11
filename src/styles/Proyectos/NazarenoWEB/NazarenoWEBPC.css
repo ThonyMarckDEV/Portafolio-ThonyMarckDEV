@@ -10,7 +10,7 @@
         box-sizing: border-box;
     }
 
-    .ecoruta-container {
+    .nazarenoweb {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -18,22 +18,24 @@
         flex-direction: column;
         position: relative;
         background: linear-gradient(to bottom, transparent 60%, #007BFF 100%);
-        text-align: center; /* Centra todo el contenido del contenedor */
+        text-align: center;
     }
 
-    .ecoruta-h1 {
+    .nazarenoweb-h1 {
         color: #007BFF;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
 
-    .ecoruta-p {
+    .nazarenoweb-p {
         font-size: 18px;
         color: #ffffff;
-        text-align: center; /* Centra el texto del párrafo */
-        line-height: 1.6; /* Aumenta el espacio entre las líneas */
-        max-width: 100%; /* Limita el ancho del texto para mayor legibilidad */
+        line-height: 1.6;
+        max-width: 80%;
+        margin-bottom: 20px;
     }
 
-    .ecoruta-btn {
+    .nazarenoweb-btn {
         background-color: #007BFF;
         color: white;
         padding: 10px 20px;
@@ -42,41 +44,41 @@
         margin-top: 30px;
     }
 
-    .ecoruta-btn:hover {
+    .nazarenoweb-btn:hover {
         background-color: #0056b3;
     }
 
-    /* Contenedor del celular */
-    .ecoruta-phone-frame {
+    /* Contenedor de la laptop */
+    .nazarenoweb-laptop-frame {
         position: relative;
-        width: 600px;
-        height: 600px;
+        width: 800px;
+        height: 520px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    /* Carrusel detrás de la imagen del celular */
-    .ecoruta-carousel-container {
+    /* Carrusel detrás de la pantalla de la laptop */
+    .nazarenoweb-carousel-container {
         position: absolute;
-        width: 230px;
-        height: 510px;
-        top: 7.5%;
+        width: 500px;
+        height: 300px;
+        top: 10%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
         overflow: hidden;
     }
 
-    .ecoruta-carousel-slide img {
+    .nazarenoweb-carousel-slide img {
         width: 100%;
-        height: 500px;
+        height: 100%;
         object-fit: cover;
         border-radius: 10px;
     }
 
-    /* La imagen del celular, colocada por encima */
-    .ecoruta-phone-image {
+    /* Imagen de la laptop, colocada por encima */
+    .nazarenoweb-laptop-image {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -84,7 +86,7 @@
         pointer-events: none;
     }
 
-    .ecoruta-carousel-control {
+    .nazarenoweb-carousel-control {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -98,26 +100,26 @@
         user-select: none;
     }
 
-    .ecoruta-carousel-control-prev {
+    .nazarenoweb-carousel-control-prev {
         left: 10px;
     }
 
-    .ecoruta-carousel-control-next {
+    .nazarenoweb-carousel-control-next {
         right: 10px;
     }
 
-    .ecoruta-carousel-control:hover {
+    .nazarenoweb-carousel-control:hover {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
-    .ecoruta-github-icon {
+    .nazarenoweb-github-icon {
         width: 50px;
         height: 50px;
         border-radius: 10px;
     }
 
-    .ecoruta-github-icon:hover {
-        width: 60px; /* Ajusta el tamaño del ícono de GitHub */
+    .nazarenoweb-github-icon:hover {
+        width: 60px;
         height: 60px;
     }
 }

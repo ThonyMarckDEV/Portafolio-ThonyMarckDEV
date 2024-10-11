@@ -1,17 +1,14 @@
-/* pc.css */
 @media only screen and (max-width: 767px) {
     html, body {
-      margin: 0;
-      padding: 0;
-      overflow-y: hidden; /* Elimina el desplazamiento vertical */
-      height: 100%; /* Asegura que el contenido se ajuste a la pantalla */
-    }
-    
-    * {
-      box-sizing: border-box; /* Asegura que el padding y border no añadan más tamaño a los elementos */
+        margin: 0;
+        padding: 0;
+        height: 100%;
     }
 
-        /* EcoRutaPC.css */
+    * {
+        box-sizing: border-box;
+    }
+
     .ecoruta-container {
         display: flex;
         justify-content: center;
@@ -20,29 +17,104 @@
         flex-direction: column;
         position: relative;
         background: linear-gradient(to bottom, transparent 60%, #007BFF 100%);
+        text-align: center; /* Centra todo el contenido del contenedor */
     }
-    
-    .ecoruta-container h1 {
-        color: #007BFF;
-    }
-    
-    .ecoruta-container p {
-        font-size: 18px;
-        color: #ffffff;
-    }
-    
-    .ecoruta-container .btn {
-        background-color: #007BFF;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    
-    .ecoruta-container .btn:hover {
-        background-color: #0056b3;
-    }
-  
-}
 
-    
+    .ecoruta-h1 {
+        font-size: 18px; /* Reduce el tamaño del título para pantallas móviles */
+        color: #007BFF;
+        margin-bottom: 10px; /* Reduce el margen inferior del título */
+    }
+
+    .ecoruta-btn {
+        display: none; /* Oculta el botón en pantallas móviles */
+    }
+
+    .ecoruta-p {
+        font-size: 14px; /* Reduce ligeramente el tamaño del texto */
+        color: #ffffff;
+        text-align: center; /* Centra el texto del párrafo */
+        line-height: 1.4; /* Reduce el espacio entre líneas */
+        max-height: 20%; /* Limita el alto del texto */
+        max-width: 90%; /* Limita el ancho del texto para mayor legibilidad */
+        overflow: hidden; /* Asegura que el texto no exceda el contenedor */
+        margin-bottom: 10px; /* Reduce el margen inferior del párrafo */
+    }
+
+    /* Contenedor del celular */
+    .ecoruta-phone-frame {
+        position: relative;
+        width: 500px; /* Reduce el tamaño del celular */
+        height: 420px; /* Reduce la altura del celular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; /* Añade un pequeño margen superior */
+    }
+
+    /* Carrusel detrás de la imagen del celular */
+    .ecoruta-carousel-container {
+        position: absolute;
+        width: 200px; /* Ajusta el tamaño del carrusel */
+        height: 350px; /* Ajusta la altura del carrusel */
+        top: 7.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .ecoruta-carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* La imagen del celular, colocada por encima */
+    .ecoruta-phone-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .ecoruta-carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 20px; /* Reduce el tamaño del control en móviles */
+        cursor: pointer;
+        padding: 8px; /* Reduce el padding */
+        z-index: 100;
+        user-select: none;
+    }
+
+    .ecoruta-carousel-control-prev {
+        left: 5px; /* Ajusta la posición del control izquierdo */
+    }
+
+    .ecoruta-carousel-control-next {
+        right: 5px; /* Ajusta la posición del control derecho */
+    }
+
+    .ecoruta-carousel-control:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .ecoruta-github-icon {
+        width: 50px; /* Ajusta el tamaño del ícono de GitHub */
+        height: 50px;
+        border-radius: 5px;
+        margin-bottom: 10px; /* Reduce el margen inferior */
+    }
+
+    .ecoruta-github-icon:hover {
+        width: 60px; /* Ajusta el tamaño del ícono de GitHub al hacer hover */
+        height: 60px;
+    }
+}

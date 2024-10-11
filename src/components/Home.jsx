@@ -13,31 +13,37 @@ function Home() {
 
   const projects = [
     {
-      img: `${process.env.PUBLIC_URL}/img/eco_ruta_logo.jpg`,
+      img: `img/eco_ruta_logo.jpg`,
       technologies: [
-        `${process.env.PUBLIC_URL}/img/java_icon.png`,
-        `${process.env.PUBLIC_URL}/img/firebase_icon.png`,
-        `${process.env.PUBLIC_URL}/img/mysql_icon.png`
+        `img/java_icon.png`,
+        `img/php_icon.png`,
+        `img/firebase_icon.png`,
+        `img/mysql_icon.png`
       ],
       route: '/EcoRuta'
     },
     {
-      img: `${process.env.PUBLIC_URL}/img/Momentoslogo.jpg`,
+      img: `img/Momentoslogo.jpg`,
       technologies: [
-        `${process.env.PUBLIC_URL}/img/html_icon.png`,
-        `${process.env.PUBLIC_URL}/img/css_icon.png`,
-        `${process.env.PUBLIC_URL}/img/mysql_icon.png`
+        `img/html_icon.png`,
+        `img/css_icon.png`,
+        `img/js_icon.png`,
+        `img/php_icon.png`,
+        `img/mysql_icon.png`
       ],
       route: '/momentos'
     },
     {
-      img: `${process.env.PUBLIC_URL}/img/CMV1.jpg`,
+      img: `img/NAZARENLOGINUI.png`,
       technologies: [
-        `${process.env.PUBLIC_URL}/img/java_icon.png`,
-        `${process.env.PUBLIC_URL}/img/firebase_icon.png`,
-        `${process.env.PUBLIC_URL}/img/mysql_icon.png`
+        `img/html_icon.png`,
+        `img/css_icon.png`,
+        `img/js_icon.png`,
+        `img/php_icon.png`,
+        `img/mysql_icon.png`
+
       ],
-      route: '/cmv'
+      route: '/NazarenoWEB'
     }
   ];  
   
@@ -62,7 +68,7 @@ function Home() {
     {/* Logo centrado */}
     <div className="logo-container">
       <img
-        src={`${process.env.PUBLIC_URL}/img/logo.png`} // Ruta correcta para GitHub Pages
+        src={`img/logo.png`} // Ruta correcta para GitHub Pages
         className="logo"
         alt="Logo"
         onClick={handleLogoClick}
@@ -72,22 +78,22 @@ function Home() {
       {/* Redes sociales debajo del logo, pero encima del slider */}
       <div className="social-media-container">
         <a href="https://www.facebook.com/thony.marck.39" target="_blank" rel="noopener noreferrer">
-          <img src={`${process.env.PUBLIC_URL}/img/facebook_icon.png`} className="social-media-icon facebook-icon" alt="Facebook" />
+          <img src={`img/facebook_icon.png`} className="social-media-icon facebook-icon" alt="Facebook" />
         </a>
         <a href="https://wa.me/902207108" target="_blank" rel="noopener noreferrer">
-        <img src={`${process.env.PUBLIC_URL}/img/whatsapp_icon.png`} className="social-media-icon whatsapp-icon" alt="WhatsApp" />
+        <img src={`img/whatsapp_icon.png`} className="social-media-icon whatsapp-icon" alt="WhatsApp" />
         </a>
         <a href="https://www.instagram.com/thonymarck08/" target="_blank" rel="noopener noreferrer">
-        <img src={`${process.env.PUBLIC_URL}/img/instagram_icon.png`} className="social-media-icon instagram-icon" alt="Instagram" />
+        <img src={`img/instagram_icon.png`} className="social-media-icon instagram-icon" alt="Instagram" />
         </a>
         <a href="https://www.linkedin.com/in/anthony-marck-mendoza-sanchez-a7a1aa311/" target="_blank" rel="noopener noreferrer">
-        <img src={`${process.env.PUBLIC_URL}/img/linkedin_icon.png`} className="social-media-icon linkedin-icon" alt="LinkedIn" />
+        <img src={`img/linkedin_icon.png`} className="social-media-icon linkedin-icon" alt="LinkedIn" />
         </a>
         <a href="https://github.com/ThonyMarckDEV" target="_blank" rel="noopener noreferrer">
-        <img src={`${process.env.PUBLIC_URL}/img/github_icon.png`} className="social-media-icon github-icon" alt="GitHub" />
+        <img src={`img/github_icon.png`} className="social-media-icon github-icon" alt="GitHub" />
         </a>
-        <a href={`${process.env.PUBLIC_URL}/pdf/CV.pdf`} target="_blank" rel="noopener noreferrer">
-          <img src={`${process.env.PUBLIC_URL}/img/cv_icon.png`} className="social-media-icon cv-icon" alt="CV" />
+        <a href={`pdf/CV.pdf`} target="_blank" rel="noopener noreferrer">
+          <img src={`img/cv_icon.png`} className="social-media-icon cv-icon" alt="CV" />
         </a>
       </div>
 
